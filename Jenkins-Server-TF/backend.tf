@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = "my-ews-baket1"
+    bucket         = "e2e-mern-tf"
     region         = "us-east-1"
     key            = "LockID"
-    dynamodb_table = "Lock-Files"
+    dynamodb_table = "e2e-mern-tf-state"
     encrypt        = true
   }
   required_version = ">=0.13.0"
@@ -14,3 +14,4 @@ terraform {
     }
   }
 }
+
