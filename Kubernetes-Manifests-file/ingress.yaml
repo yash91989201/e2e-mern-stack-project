@@ -1,7 +1,8 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: go-web-app
+  name: 3-tier-ingress
+  namespace: three-tier
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
